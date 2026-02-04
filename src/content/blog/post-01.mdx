@@ -4,7 +4,9 @@ date: 2023-06-01
 description: Explorando algunas de las nuevas funciones de ES6 en JavaScript.
 author: Jane Doe
 # image: https://placehold.co/1400x900/
-image: '/assets/images/post-01.png'
+
+image: import('../../assets/images/post-01.png')
+
 tags: [JavaScript, ES6, Programming]
 
 # layout: ../../layouts/BlogLayout.astro
@@ -15,7 +17,7 @@ tags: [JavaScript, ES6, Programming]
 {/* <!-- Mostrar imagen --> */}
 
 <img
-  src="/assets/images/post-01.png"
+  src={frontmatter.image.src}
   width="350"
   alt="Explorando Funciones de ES6"
 />
